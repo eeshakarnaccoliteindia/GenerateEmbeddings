@@ -26,7 +26,7 @@ public class Program
 		var embeddingStorage = new EmbeddingStorage();
 		await embeddingStorage.StoreEmbeddingInQdrantAsync("pdf_collection", id: 1, embedding, new Dictionary<string, object>
 		{
-			{ "source", "your-document.pdf" }
+			{ "source", "Sample-PDF.pdf" }
 		});
 
 		Console.WriteLine("PDF embeddings stored in Qdrant successfully!");
